@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+	<g:VerticalPanel>
+		<g:Grid>
+			<g:row>
+				<g:customCell>
+					<g:Label text="URL" ui:field="labelUrl"/>
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox ui:field="txtUrl" width="267px" />
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="URL Name" ui:field="labelUrlName" />
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox ui:field="txtUrlName" />
+				</g:customCell>
+			</g:row>
+				<g:row>
+				<g:customCell>
+					<g:Label text="Username" ui:field="usernameLabel" />
+				</g:customCell>
+				<g:customCell>
+					<g:TextBox ui:field="username" />
+				</g:customCell>
+			</g:row>
+				<g:row>
+				<g:customCell>
+					<g:Label text="Passwort" ui:field="passwordLabel" />
+				</g:customCell>
+				<g:customCell>
+					<g:PasswordTextBox ui:field="password" />
+				</g:customCell>
+			</g:row>
+			<g:row />
+			<g:row>
+				<g:customCell>
+					<g:Button ui:field="buttonOK" text="OK" />
+				</g:customCell>
+				<g:customCell>
+					<g:Button ui:field="buttonCancel" text="Cancel" />
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:VerticalPanel>
+
+</ui:UiBinder> 

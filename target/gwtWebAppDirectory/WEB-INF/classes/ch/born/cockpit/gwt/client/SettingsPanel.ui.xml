@@ -1,0 +1,54 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  
+  
+  <g:DockLayoutPanel unit='PX' width="1200" height="800">
+    <g:north size='98.0'>
+      <g:HTMLPanel>
+      	<g:VerticalPanel width="100%">
+      		<g:HorizontalPanel width="100%">
+      		   <g:Image url="images/adesso.png" addStyleNames="logo"/>
+      	    </g:HorizontalPanel>
+      		<g:MenuBar width="100%">
+       		  <g:MenuItem text="Projects" ui:field="cmdProjects"/>
+       	    </g:MenuBar>
+      	</g:VerticalPanel>
+      </g:HTMLPanel>
+    </g:north>
+
+    <g:center>
+      <g:SplitLayoutPanel>
+        <g:west size='600'>
+
+          <g:ScrollPanel alwaysShowScrollBars="true" width="" >
+    	  <g:VerticalPanel >
+        	<g:FlexTable ui:field="projectTable" />
+           </g:VerticalPanel>
+    	</g:ScrollPanel>
+
+        </g:west>
+
+        <g:center>
+
+           <g:ScrollPanel alwaysShowScrollBars="true">
+             <g:VerticalPanel >
+        	   <g:FlexTable ui:field="jenkinsTable" />
+        	 </g:VerticalPanel>
+           </g:ScrollPanel>
+
+        </g:center>
+
+        <g:south size='300'>
+
+          <g:ScrollPanel alwaysShowScrollBars="true" >
+            <g:VerticalPanel >
+        	  <g:FlexTable ui:field="sonarTable"/>
+        	 </g:VerticalPanel>
+           </g:ScrollPanel>
+
+        </g:south>
+      </g:SplitLayoutPanel>
+    </g:center>
+  </g:DockLayoutPanel>
+</ui:UiBinder> 

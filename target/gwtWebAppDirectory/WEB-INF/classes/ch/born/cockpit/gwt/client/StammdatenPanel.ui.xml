@@ -1,0 +1,67 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+
+	<g:DockLayoutPanel unit='PX' width="1200" height="800">
+		<g:north size='98.0'>
+			<g:HTMLPanel>
+				<g:VerticalPanel width="100%">
+					<g:HorizontalPanel width="100%">
+						<g:Image url="images/adesso.png" addStyleNames="logo" />
+					</g:HorizontalPanel>
+					<g:MenuBar width="100%">
+						<g:MenuItem text="Projects" ui:field="cmdProjects" />
+					</g:MenuBar>
+				</g:VerticalPanel>
+			</g:HTMLPanel>
+		</g:north>
+
+		<g:center>
+			<g:HTMLPanel>
+				<g:VerticalPanel styleName="stammdaten">
+					<g:HorizontalPanel>
+						<g:Label text="Jira URL" width="100px"/>
+						<g:TextBox width="400px" ui:field="txtJiraURL" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Jira Username" width="342px" />
+						<g:TextBox ui:field="txtJiraUserName" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Jira Password" width="342px" />
+						<g:PasswordTextBox ui:field="txtJiraPassword" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Jira Filter ID" width="342px" />
+						<g:IntegerBox ui:field="txtJiraFilterID" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Refresh Interval min" width="342px"/>
+						<g:IntegerBox ui:field="txtRefresh" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Limit Test Coverage in %" width="342px" />
+						<g:IntegerBox ui:field="txtTestCoverage" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Limit Rule Violation (count)" width="342px"/>
+						<g:IntegerBox ui:field="txtRuleViolation" />
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:Label text="Change Style Interval min" width="342px" />
+						<g:IntegerBox ui:field="txtChangeStyle" />
+					</g:HorizontalPanel>
+				
+						<g:Button text="Save" ui:field="cmdSave" />
+				</g:VerticalPanel>
+				<g:VerticalPanel styleName="table">
+						<g:FlexTable ui:field="jenkinsTable" width="600px" />
+				</g:VerticalPanel>
+				<g:VerticalPanel styleName="table">
+						<g:FlexTable ui:field="sonarTable" width="600px" />
+				</g:VerticalPanel>
+			</g:HTMLPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

@@ -1,0 +1,79 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	color: #777777;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+.FlexTable {
+	background-color: #505050;
+	border-top: thin solid #444444;
+	border-left: thin solid #444444;
+	border-right: thin solid #111111;
+	border-bottom: thin solid #111111;
+}
+
+.FlexTable-OddRow {
+	background-color: #E5ECF9;
+}
+
+.FlexTable-EvenRow {
+	background-color: #F4F5F9;
+}
+
+.FlexTable-ColumnLabel {
+	background: none repeat scroll 0 0 #C3D9FF;
+	color: black;
+}
+
+.FlexTable-ColumnLabel-RED {
+	background: none repeat scroll 0 0 #FF0000;
+	color: black;
+}
+
+.FlexTable-ColumnLabel-GREEN {
+	background: none repeat scroll 0 0 #00FF00;
+	color: black;
+}
+
+.FlexTable-ColumnLabel-BLUE {
+	background: none repeat scroll 0 0 #0000FF;
+	color: black;
+}
+
+.FlexTable-ColumnLabel-YELLOW {
+	background: none repeat scroll 0 0 #FFFF88;
+	color: black;
+}
+
+.FlexTable-ColumnLabel-ORANGE {
+	background: none repeat scroll 0 0 #FF7400;
+	color: black;
+}
+
+.FlexTable-ColumnLabelCell {
+	border-color: white;
+}
+
+.FlexTable-Cell {
+	border-color: white;
+}
+
+.FlexTable-Cell-Yellow {
+	background-color: #FFFF12;
+}
+
+.TicketNumber {
+	color: white;
+}
+
+.TicketLable {
+	color: white;
+}
+
+.TicketPanel {
+	background-color: #0000c6;
+}
